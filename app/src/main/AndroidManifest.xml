@@ -45,6 +45,11 @@
             android:screenOrientation="nosensor" />
 
         <activity
+            android:name=".ui.screen.sign_up.teacher.SignUpTeacherActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+
+        <activity
             android:name=".ui.screen.home.student.HomeStudentActivity"
             android:exported="true"
             android:screenOrientation="nosensor" />

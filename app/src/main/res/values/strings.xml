@@ -18,4 +18,13 @@
     <string name="this_action_may_contain_advertising">This action may contain advertising</string>
     <string name="choose_one_language">Choose one language</string>
     <string name="done">Done</string>
+    <string name="created_an_account">Created an account</string>
+    <string name="create_your_account_it_takes_less_than_a_minute_enter_your_email_and_password">Create your account, it takes less than a minute. Enter your email and password</string>
+    <string name="email">Email</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="or">Or</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>
