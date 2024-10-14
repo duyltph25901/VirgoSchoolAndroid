@@ -5,7 +5,9 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.BaseProjectFlamingo" parent="Base.Theme.BaseProjectFlamingo" />
+    <style name="Theme.BaseProjectFlamingo" parent="Base.Theme.BaseProjectFlamingo" >
+        <item name="android:windowFullscreen">true</item>
+    </style>
 
     <style name="ThemeDialog" parent="android:Theme.Holo.Dialog">
         <item name="android:windowMinWidthMajor">85%</item>

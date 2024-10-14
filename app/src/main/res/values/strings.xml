@@ -3,4 +3,19 @@
 
     <string name="please_allow_us_to_access_your_camera_and_take_picture">Please allow us to access your camera and take picture.</string>
     <string name="message_denied_camera_permission">You need to grant camera permission to use this feature!</string>
+    <string name="virgo_school">Virgo School</string>
+    <string name="next">Next</string>
+    <string name="ob_title_1">Online Study is the</string>
+    <string name="ob_title_2">Teachers &amp; Learners</string>
+    <string name="ob_title_3">Learn Anytime,</string>
+    <string name="ob_des_1">Best choice for everyone.</string>
+    <string name="ob_des_2">Best platform for both</string>
+    <string name="ob_des_3">Anywhere. Accelerate Your Future and beyond.</string>
+    <string name="tell_me_who_you_are">Tell me who you are!</string>
+    <string name="before_we_get_started_let_us_survey_your_career">Before we get started,let us survey your career!</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="this_action_may_contain_advertising">This action may contain advertising</string>
+    <string name="choose_one_language">Choose one language</string>
+    <string name="done">Done</string>
 </resources>

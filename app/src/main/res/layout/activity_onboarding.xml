@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_screen_primary">
+
+        <ImageView
+            android:id="@+id/iconOnBoarding"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_margin="@dimen/_12sdp"
+            android:background="@drawable/bg_circle_primary"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/icon_light_onboarding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/textVirgoSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/virgo_school"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="@id/iconOnBoarding"
+            app:layout_constraintStart_toEndOf="@id/iconOnBoarding"
+            app:layout_constraintTop_toTopOf="@id/iconOnBoarding" />
+
+        <LinearLayout
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_12sdp"
+            android:background="@drawable/bg_btn_next_onboarding"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            app:layout_constraintBottom_toTopOf="@id/viewBottom"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:fontFamily="@font/inter_semi_bold"
+                android:text="@string/next"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/bg_circle_white"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/icon_next_onboarding" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/indicator1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:background="@drawable/bg_indicator_active"
+            app:layout_constraintBottom_toBottomOf="@id/buttonNext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/buttonNext" />
+
+        <View
+            android:id="@+id/indicator2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/bg_indicator_un_active"
+            app:layout_constraintBottom_toBottomOf="@id/indicator1"
+            app:layout_constraintStart_toEndOf="@id/indicator1"
+            app:layout_constraintTop_toTopOf="@id/indicator1" />
+
+        <View
+            android:id="@+id/indicator3"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/bg_indicator_un_active"
+            app:layout_constraintBottom_toBottomOf="@id/indicator2"
+            app:layout_constraintStart_toEndOf="@id/indicator2"
+            app:layout_constraintTop_toTopOf="@id/indicator2" />
+
+        <Space
+            android:id="@+id/viewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpgOnboarding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            app:layout_constraintBottom_toTopOf="@id/buttonNext"
+            app:layout_constraintTop_toBottomOf="@id/iconOnBoarding" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

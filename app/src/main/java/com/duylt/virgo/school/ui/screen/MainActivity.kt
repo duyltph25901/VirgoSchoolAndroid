@@ -1,4 +1,4 @@
-package com.duylt.virgo.school.ui
+package com.duylt.virgo.school.ui.screen
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
