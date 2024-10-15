@@ -47,6 +47,17 @@ fun Context.validateEmail(email: String): Boolean {
 
 fun Context.validatePassword(password: String): Boolean = password.length >= 6
 
+fun Context.validateUserName(userName: String) = userName.trim().length >= 2
+
+fun Context.isNullInput(vararg args: Any?): Boolean {
+    for (arg in args) {
+        if (arg == null || arg.toString().trim().isEmpty()) {
+            return true
+        }
+    }
+    return false
+}
+
 fun <T> Context.convertObjectToJson(obj: T): String = convertObjectToJsonConvertUtils(obj = obj)
 
 fun <T> Context.convertJsonToObject(json: String, classOfT: Class<T>): T =
